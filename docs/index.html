@@ -14,44 +14,41 @@
 
 <body>
 
+    <div id="overlay" class="active"></div>
+
     <header class="header">
 
         <div class="header-top">
+            <a class="logo" href="#">мг</a>
 
-            <a class="logo" href="">мг</a>
-
-            <nav class="header-top_nav">
-                <ul>
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Работы</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
+            <nav class="header-top_nav active">
+                <a href="#">Главная</a>
+                <a href="#">Работы</a>
+                <a href="#">Контакты</a>
             </nav>
 
             <div class="header-top_icons">
-                <ul>
-                    <li><a href="">
-                            <i class="fab fa-2x fa-linkedin-in"></i>
-                        </a></li>
-
-                    <li><a href="">
-                            <i class="fab fa-2x fa-github"></i>
-                        </a></li>
-
-                    <li><a href="">
-                            <i class="fab fa-2x fa-vk"></i>
-                        </a></li>
-                </ul>
+                <a href="#">
+                    <i class="fab fa-2x fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-2x fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-2x fa-vk"></i>
+                </a>
             </div>
 
+            <div class="toggle-menu active">
+                <span></span>
+            </div>
         </div>
 
         <div class="container">
-
             <div class="header-content">
 
                 <div class="header-content_img">
-                    <img src="./img/header/my_pic.jpg" alt="">
+                    <img src="./img/header/my_pic.jpg" alt="me">
                 </div>
 
                 <div class="header-content_about">
@@ -59,12 +56,12 @@
                         <span class="about-name_underline">Матейчук</span>
                         <span class="about-name_underline">Галина</span> <br>
                     </h1>
-                    <p class="about-desc">Верстальщик сайтов, веб&ndash;разработчик. Оперативная&nbsp;верстка. Работаю с
-                        соблюдением сроков и выполнением ТЗ. </p>
+                    <p class="about-desc">Верстальщик сайтов, веб&ndash;разработчик. Оперативная&nbsp;верстка. Работаю с&nbsp;соблюдением сроков и выполнением ТЗ.
+                    </p>
                     <div class="about-buttons">
-                        <a class="button-ref about-buttons_meet" href="">Познакомиться
+                        <a class="button-ref about-buttons_meet" href="#">Познакомиться
                         </a>
-                        <a class="button-ref about-buttons_contacts" href="">Контакты
+                        <a class="button-ref about-buttons_contacts" href="#">Контакты
                         </a>
                     </div>
                 </div>
@@ -73,51 +70,111 @@
         </div>
 
         <div class="header-image">
-            <img src="./img/header/header-bg.jpg" alt="">
+            <img src="./img/header/bg-header1.jpg" alt="mountins">
         </div>
 
         <div class="container">
             <div class="header-description">
 
-                <div class="header-description_block">
+                <div class="header-description_skills">
                     <h3 class="heading-article skills-heading">Что я умею:</h3>
                     <ul class="skills-desc">
-                        <li> &ndash; pixel perfect, полное соответствие макету.</li>
-                        <li> &ndash; верстаю с сеткой или без.</li>
-                        <li> &ndash; адаптивная верстка под мобильные устройства.</li>
-                        <li> &ndash; оптимизация по retina экраны</li>
-                        <li> &ndash; с Bootstrap и без него.</li>
+                        <li>Pixel perfect, полное соответствие макету.</li>
+                        <li>верстаю с сеткой или без.</li>
+                        <li>адаптивная верстка под мобильные&nbsp;устройства.</li>
+                        <li>оптимизация по retina экраны</li>
+                        <li>с Bootstrap и без него.</li>
                     </ul>
                     <div class="about-buttons">
                         <a class="button-ref about-buttons_meet" href="">Смотреть работы</a>
                     </div>
                 </div>
 
-                <div class="header-description_block block-contacts">
+                <div class="header-description_contacts">
                     <h3 class="heading-article contacts-heading">На связи:</h3>
-                    <ul class="contacts-icons">
-                        <li><a href="">
-                                <i class="fab fa-3x fa-github"></i>
-                            </a></li>
-
-                        <li><a href="">
-                                <i class="fab fa-3x fa-telegram"></i>
-                            </a></li>
-
-                        <li><a href="">
-                                <i class="fab fa-3x fa-vk"></i>
-                            </a></li>
-                        <li><a href="">
-                                <i class="fab fa-3x fa-facebook"></i>
-                            </a></li>
-                    </ul>
-                    <p class="contacts-email">halyna.mateychuk@gmail.com</p>
+                    <div class="contacts-icons">
+                        <a href="#">
+                            <i class="fab fa-3x fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-3x fa-telegram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-3x fa-vk"></i>
+                        </a></li>
+                        <a href="#">
+                            <i class="fab fa-3x fa-facebook"></i>
+                        </a></li>
+                    </div>
+                    <a href="mailto:halyna.mateychuk@gmail.com" class="contacts-email">halyna.mateychuk@gmail.com</a>
                 </div>
-
             </div>
         </div>
+
     </header>
 
+    <section class="section-portfolio">
+        <div class="container">
+
+            <h2 class="heading-section heading-section-portfolio">Портфолио</h2>
+            <nav class="portfolio-nav">
+                <ul class="portfolio-nav-list">
+                    <li><a class="all_works" href="">Все работы</a></li>
+                    <li><a class="all_works type_of_work" href="">Bootstrap</a></li>
+                    <li><a class="all_works type_of_work" href="">WordPress</a></li>
+                    <li><a class="all_works type_of_work" href="">Frontend</a></li>
+                </ul>
+            </nav>
+
+            <div class="row-2">
+                <a class="site" href="">
+                    <div class="site-img">
+                        <img src="./img/portfolio/Landing-Page-Travel.jpg" alt="plane">
+                    </div>
+                    <h4 class="site-name">Верстка “Форест тревел”</h4>
+                    <h5 class="site-type">Верстка многостраничного сайта. </h5>
+                </a>
+                <a class="site" href="">
+                    <div class="site-img">
+                        <img src="./img/portfolio/iMac-Mockup.jpg" alt="bubbles">
+                    </div>
+                    <h4 class="site-name">Сайт для коворкинга</h4>
+                    <h5 class="site-type">Верстка лендинга.
+                    </h5>
+                </a>
+            </div>
+
+            <div class="row-3">
+                <a class="site" href="">
+                    <div class="site-img">
+                        <img src="./img/portfolio/coffee-world.jpg" alt="cups">
+                    </div>
+                    <h4 class="site-name site-name_small">Верстка “Мир кофе”</h4>
+                    <h5 class="site-type">Верстка многостраничного сайта.</h5>
+                </a>
+                <a class="site" href="">
+                    <div class="site-img">
+                        <img src="./img/portfolio/phone-world.jpg" alt="phone">
+                    </div>
+                    <h4 class="site-name site-name_small">Верстка “Мир телефонов”</h4>
+                    <h5 class="site-type">Верстка многостраничного сайта.</h5>
+                </a>
+                <a class="site nonvisible-block" href="">
+                    <div class="site-img">
+                        <img src="./img/portfolio/auto-world.jpg" alt="limon">
+                    </div>
+                    <h4 class="site-name site-name_small">Верстка “Мир Авто”</h4>
+                    <h5 class="site-type">Верстка многостраничного сайта.</h5>
+                </a>
+            </div>
+
+            <a class="nonvisible-ref" href="">Смотреть все работы</a>
+
+        </div>
+    </section>
+
+    <script src="./libs/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

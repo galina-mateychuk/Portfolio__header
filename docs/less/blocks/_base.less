@@ -35,6 +35,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 img,
 li,
@@ -47,6 +48,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 button,
@@ -58,10 +60,35 @@ button {
   cursor: pointer;
 }
 
+.none {
+  display: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+
+#overlay.active {
+  display: block;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
 .container {
+  // background-color: #6cc644;
   margin: 0 auto;
 
   @media (min-width: 768px) {
+    max-width: 708px;
   }
 
   @media (min-width: 1200px) {
@@ -99,10 +126,100 @@ button {
   color: #3b5998;
 }
 
-
 .heading-article {
+  font-size: 30px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 1200px) {
     font-size: 40px;
-    font-weight: 800;
-    color: #000000;
-    line-height: 1.2;
+  }
+}
+
+.heading-section {
+  position: relative;
+  display: inline-block;
+  font-size: 42px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 12px;
+    background-color: #fbdc4d;
+
+    bottom: -9px;
+    left: 0;
+    transform: translateY(-100%);
+
+    z-index: -1;
+
+    @media (min-width: 768px) {
+      bottom: -6px;
+    }
+
+    @media (min-width: 1200px) {
+      bottom: -4px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 64px;
+  }
+}
+
+.row-2 {
+  margin-bottom: 33px;
+  display: grid;
+  grid-template-rows: repeat(2, 43vh);
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 33px;
+    grid-template-rows: repeat(1, 49vh);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 27px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+    grid-template-rows: repeat(1, 71vh);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 27px;
+  }
+}
+
+.row-3 {
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-rows: repeat(3, 44vh);
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 25px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 31px;
+    grid-template-rows: repeat(1, 49vh);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+    grid-template-rows: repeat(1, 50vh);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+  }
 }
