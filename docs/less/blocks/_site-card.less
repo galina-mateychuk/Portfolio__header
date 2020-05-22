@@ -1,19 +1,30 @@
 .site-card {
   max-width: 290px;
+  margin-bottom: 50px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: 768px) {
     max-width: 340px;
+    margin-bottom: 0;
+    &:first-child, &:nth-of-type(2) {
+      margin-bottom: 46px;
+    }
   }
 
   @media (min-width: 1200px) {
     max-width: 100%;
+    &:first-child, &:nth-of-type(2) {
+      margin-bottom: 64px;
+    }
   }
 }
 
 .site-img {
   position: relative;
-  // background-color: #e0b421;
-  margin-bottom: 20px;
+  background-color: #e0b421;
+  margin-bottom: 25px;
   overflow: hidden;
 
   &::before {

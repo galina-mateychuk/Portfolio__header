@@ -45,7 +45,7 @@
       @media (min-width: 768px) {
         border: none;
         background-color: unset;
-        margin-right: 41px;  
+        margin-right: 33px;  
         &:last-child {
           margin-right: 0;
         }
@@ -89,16 +89,17 @@
 }
 
 .nonvisible-ref {
+  width: fit-content;
   font-size: 20px;
   font-weight: 400;
   color: #039be5;
-  text-decoration: underline;
+  border-bottom: 1px solid #039be5;
   line-height: 1.2;
   transition: 0.5s;
 
   &:hover {
     color: var(--yellow);
-    text-decoration: none;
+    border: none;
   }
 
   @media (min-width: 768px) {
