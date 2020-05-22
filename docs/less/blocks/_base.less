@@ -63,6 +63,7 @@ button {
 :root {
   --hover-color: #0077b5;
   --yellow: #fbdc4d;
+  --red: #d63434;
 }
 
 .none {
@@ -185,46 +186,20 @@ button {
   }
 }
 
-.row-2 {
-  margin-bottom: 33px;
-  display: grid;
-  grid-template-rows: repeat(2, 43vh);
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 30px;
-
-  @media (min-width: 768px) {
-    margin-bottom: 33px;
-    grid-template-rows: repeat(1, 49vh);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 27px;
-  }
-
-  @media (min-width: 1200px) {
-    margin-bottom: 50px;
-    grid-template-rows: repeat(1, 71vh);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 27px;
-  }
-}
-
-.row-3 {
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 24px;
-  display: grid;
-  grid-template-rows: repeat(3, 44vh);
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 25px;
+ 
 
   @media (min-width: 768px) {
     margin-bottom: 31px;
-    grid-template-rows: repeat(1, 49vh);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px;
+   
   }
 
   @media (min-width: 1200px) {
     margin-bottom: 0;
-    grid-template-rows: repeat(1, 50vh);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
+    
   }
 }

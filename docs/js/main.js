@@ -20,5 +20,10 @@ $(document).
                 overlay.classList.remove('active');
             })
 
+        let containerEl = document.querySelector('#portfolio-works');
+        let mixer = mixitup(containerEl, {
+            
+        })
+        
         }
     );

@@ -59,7 +59,7 @@
                     <p class="about-desc">Верстальщик сайтов, веб&ndash;разработчик. Оперативная&nbsp;верстка. Работаю с&nbsp;соблюдением сроков и выполнением ТЗ.
                     </p>
                     <div class="about-buttons">
-                        <a class="button-ref about-buttons_meet" href="#">Познакомиться
+                        <a class="button-ref about-buttons_meet" href="#skills">Познакомиться
                         </a>
                         <a class="button-ref about-buttons_contacts" href="#">Контакты
                         </a>
@@ -74,7 +74,7 @@
         </div>
 
         <div class="container">
-            <div class="header-description">
+            <div id="skills" class="header-description">
 
                 <div class="header-description_skills">
                     <h3 class="heading-article skills-heading">Что я умею:</h3>
@@ -86,7 +86,7 @@
                         <li>с Bootstrap и без него.</li>
                     </ul>
                     <div class="about-buttons">
-                        <a class="button-ref about-buttons_meet" href="">Смотреть работы</a>
+                        <a class="button-ref about-buttons_meet" href="#">Смотреть работы</a>
                     </div>
                 </div>
 
@@ -118,16 +118,14 @@
 
             <h2 class="heading-section heading-section-portfolio">Портфолио</h2>
             <nav class="portfolio-nav">
-                <ul class="portfolio-nav-list">
-                    <li><a class="all_works" href="">Все работы</a></li>
-                    <li><a class="all_works type_of_work" href="">Bootstrap</a></li>
-                    <li><a class="all_works type_of_work" href="">WordPress</a></li>
-                    <li><a class="all_works type_of_work" href="">Frontend</a></li>
-                </ul>
+                    <button class="all_works mixitup-control-active" data-filter="all">Все работы</button>
+                    <button class="all_works type_of_work" data-filter=".boots">Bootstrap</button>
+                    <button class="all_works type_of_work" data-filter=".wp">WordPress</button>
+                    <button class="all_works type_of_work" data-filter=".frontend">Frontend</button>
             </nav>
 
-            <div class="row-2">
-                <div class="site-card">
+            <div id="portfolio-works" class="row">
+                <div class="site-card mix wp">
                     <a href="#" class="site-img">
                         <img src="./img/portfolio/Landing-Page-Travel.jpg" alt="plane">
                         <button class="button-ref hover-btn">Смотреть проект</button>
@@ -135,7 +133,7 @@
                     <a href="#" class="site-name">Верстка “Форест тревел”</a>
                     <h5 class="site-type">Верстка многостраничного сайта. </h5>
                 </div>
-                <div class="site-card">
+                <div class="site-card mix boots">
                     <a href="#" class="site-img">
                         <img src="./img/portfolio/iMac-Mockup.jpg" alt="bubbles">
                         <button class="button-ref hover-btn">Смотреть проект</button>
@@ -144,10 +142,7 @@
                     <h5 class="site-type">Верстка лендинга.
                     </h5>
                 </div>
-            </div>
-
-            <div class="row-3">
-                <div class="site-card">
+                <div class="site-card mix wp boots">
                     <a href="#" class="site-img">
                         <img src="./img/portfolio/coffee-world.jpg" alt="cups">
                         <button class="button-ref hover-btn">Смотреть проект</button>
@@ -155,7 +150,7 @@
                     <a href="#" class="site-name site-name_small">Верстка “Мир кофе”</a>
                     <h5 class="site-type">Верстка многостраничного сайта.</h5>
                 </div>
-                <div class="site-card">
+                <div class="site-card mix wp">
                     <a href="#" class="site-img">
                         <img src="./img/portfolio/phone-world.jpg" alt="phone">
                         <button class="button-ref hover-btn">Смотреть проект</button>
@@ -163,7 +158,7 @@
                     <a href="#" class="site-name site-name_small">Верстка “Мир телефонов”</a>
                     <h5 class="site-type">Верстка многостраничного сайта.</h5>
                 </div>
-                <div class="site-card nonvisible-block">
+                <div class="site-card mix nonvisible-block frontend">
                     <a href="#" class="site-img">
                         <img src="./img/portfolio/auto-world.jpg" alt="limon">
                         <button class="button-ref hover-btn">Смотреть проект</button>
@@ -173,11 +168,12 @@
                 </div>
             </div>
 
-            <a class="nonvisible-ref" href="">Смотреть все работы</a>
+            <a class="nonvisible-ref" href="#">Смотреть все работы</a>
 
         </div>
     </section>
 
+    <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/jQuery/jquery-3.4.1.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
