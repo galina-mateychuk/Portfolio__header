@@ -24,7 +24,14 @@
 .heading-section-portfolio {
   margin-bottom: 46px;
 
+  @media (min-width: 375px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   @media (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 50px;
   }
 
@@ -45,12 +52,12 @@
       @media (min-width: 768px) {
         border: none;
         background-color: unset;
-        margin-right: 33px;  
+        margin-right: 33px;
         &:last-child {
           margin-right: 0;
         }
       }
-  
+
       @media (min-width: 1200px) {
         margin-right: 74px;
       }
