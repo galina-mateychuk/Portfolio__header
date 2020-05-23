@@ -95,11 +95,24 @@ button {
 }
 
 .container {
-  // background-color: #6cc644;
+  width: 100%;
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 
+  @media (min-width: 576px) {
+    max-width: 540px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @media (min-width: 768px) {
-    max-width: 708px;
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
   }
 
   @media (min-width: 1200px) {
@@ -195,13 +208,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 47px; 
+  margin-bottom: 47px;
 
   @media (min-width: 768px) {
-    margin-bottom: 41px;   
+    margin-bottom: 41px;
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 0;    
+    margin-bottom: 0;
   }
 }

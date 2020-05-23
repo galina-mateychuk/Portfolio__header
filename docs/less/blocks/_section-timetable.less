@@ -1,0 +1,256 @@
+.section-timetable {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1600px;
+
+    background-image: url("../img/header/lines.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: auto;
+  }
+}
+
+.heading-section-timetable {
+  position: relative;
+  width: fit-content;
+  font-size: 35px;
+  font-weight: 800;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #fbdc4d;
+
+    bottom: -3px;
+    left: 0;
+    transform: translateY(-100%);
+
+    z-index: -1;
+
+    @media (min-width: 768px) {
+      height: 12px;
+      bottom: 0px;
+    }
+
+    @media (min-width: 1200px) {
+      bottom: 3px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 150px;
+    font-size: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 64px;
+    margin-bottom: 145px;
+  }
+}
+
+.timetable-column {
+  max-width: 1005px;
+  margin: 0 auto;
+}
+
+.timetable-column__block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 170px;
+  padding-bottom: 45px;
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 4px;
+    height: ~"calc(100% - 93px)";
+    bottom: 0;
+    left: 35px;
+    background-color: #e1eef4;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    width: 50%;
+    padding-bottom: 50px;
+    margin-bottom: 14px;
+
+    &:nth-of-type(odd) {
+      flex-direction: row-reverse;
+      margin-left: 37px;
+      margin-right: auto;
+      text-align: right;
+
+      &::after {
+        position: absolute;
+        left: auto;
+        right: 35px;
+      }
+
+      .timetable-column__description {
+        margin-left: 0;
+        margin-right: 32px;
+      }
+    }
+
+    &:nth-of-type(even) {
+      margin-left: auto;
+      margin-right: 37px;
+    }
+
+    &:first-child::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 4px;
+      height: ~"calc(100% - 93px)";
+      top: -136px;
+      left: auto;
+      right: 35px;
+      background-color: #e1eef4;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 25px;
+
+    &:nth-of-type(odd) {
+      justify-content: flex-start;
+      .timetable-column__description {
+        margin-left: 0;
+        margin-right: 41px;
+      }
+    }
+    &:nth-of-type(even) {
+      justify-content: flex-start;
+      .timetable-column__description {
+        margin-left: 46px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.timetable-column__block-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 28px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+  flex-shrink: 0;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.layers {
+  fill: #ffcf8f;
+}
+.presentation-chart {
+  fill: #ff5b5b;
+}
+.hours-24 {
+  fill: #ac74ee;
+}
+.code-alt {
+  fill: #55e6cc;
+}
+.diamond {
+  fill: #7cc0ff;
+}
+
+.timetable-column__description {
+  max-width: 350px;
+  margin-left: 26px;
+
+  @media (min-width: 768px) {
+    padding-top: 20px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 500px;
+  }
+}
+
+.timetable-column__work-element {
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 7px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 8px;
+    display: inline-block;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 7px;
+      background-color: #fbdc4d;
+      bottom: -2px;
+      left: 0;
+      transform: translateY(-100%);
+      z-index: -1;
+    }
+  }
+}
+
+.timetable-column__work-desc {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42;
+  margin-bottom: 7px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.375;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+}
+
+.timetable-column__work-hours {
+  font-size: 14px;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+  }
+}
