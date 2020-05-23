@@ -854,6 +854,12 @@ button {
 .type_of_work {
   color: #8fa5ae;
 }
+.mixitup-control-active {
+  color: var(--red);
+}
+.mixitup-control-active:hover {
+  color: var(--red);
+}
 .nonvisible-ref {
   width: fit-content;
   font-size: 20px;
@@ -877,32 +883,37 @@ button {
     display: none;
   }
 }
-.site-card {
+.portfolio-works__item {
   max-width: 290px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
 }
-.site-card:last-child {
+.portfolio-works__item:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .site-card {
+  .portfolio-works__item {
     max-width: 340px;
     margin-bottom: 0;
   }
-  .site-card:first-child,
-  .site-card:nth-of-type(2) {
+  .portfolio-works__item:first-child,
+  .portfolio-works__item:nth-of-type(2) {
     margin-bottom: 46px;
   }
 }
 @media (min-width: 1200px) {
-  .site-card {
-    max-width: 100%;
+  .portfolio-works__item {
+    max-width: 360px;
   }
-  .site-card:first-child,
-  .site-card:nth-of-type(2) {
+  .portfolio-works__item:first-child,
+  .portfolio-works__item:nth-of-type(2) {
     margin-bottom: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-works__item-big {
+    max-width: 556px;
   }
 }
 .site-img {

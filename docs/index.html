@@ -131,65 +131,69 @@
 
     </header>
 
-    <section class="section-portfolio">
-        <div class="container">
+    <!-- <main> -->
 
-            <h2 class="heading-section heading-section-portfolio">Портфолио</h2>
-            <nav class="portfolio-nav">
-                <button class="all_works mixitup-control-active" data-filter="all">Все работы</button>
-                <button class="all_works type_of_work" data-filter=".boots">Bootstrap</button>
-                <button class="all_works type_of_work" data-filter=".wp">WordPress</button>
-                <button class="all_works type_of_work" data-filter=".frontend">Frontend</button>
-            </nav>
+        <section class="section-portfolio">
+            <div class="container">
 
-            <div id="portfolio-works" class="row">
-                <div class="site-card mix wp">
-                    <a href="#" class="site-img">
-                        <img src="./img/portfolio/Landing-Page-Travel.jpg" alt="plane">
-                        <button class="button-ref hover-btn">Смотреть проект</button>
-                    </a>
-                    <a href="#" class="site-name">Верстка “Форест тревел”</a>
-                    <h5 class="site-type">Верстка многостраничного сайта. </h5>
+                <h2 class="heading-section heading-section-portfolio">Портфолио</h2>
+                <nav class="portfolio-nav">
+                    <button class="all_works mixitup-control-active" data-filter="all">Все работы</button>
+                    <button class="all_works type_of_work" data-filter=".boots">Bootstrap</button>
+                    <button class="all_works type_of_work" data-filter=".wp">WordPress</button>
+                    <button class="all_works type_of_work" data-filter=".frontend">Frontend</button>
+                </nav>
+
+                <div id="portfolio-works" class="row">
+                    <div class="portfolio-works__item portfolio-works__item-big mix wp">
+                        <a href="#" class="site-img">
+                            <img src="./img/portfolio/Landing-Page-Travel.jpg" alt="plane">
+                            <button class="button-ref hover-btn">Смотреть проект</button>
+                        </a>
+                        <a href="#" class="site-name">Верстка “Форест тревел”</a>
+                        <h5 class="site-type">Верстка многостраничного сайта. </h5>
+                    </div>
+                    <div class="portfolio-works__item portfolio-works__item-big mix boots">
+                        <a href="#" class="site-img">
+                            <img src="./img/portfolio/iMac-Mockup.jpg" alt="bubbles">
+                            <button class="button-ref hover-btn">Смотреть проект</button>
+                        </a>
+                        <a href="#" class="site-name">Сайт для коворкинга</a>
+                        <h5 class="site-type">Верстка лендинга.
+                        </h5>
+                    </div>
+                    <div class="portfolio-works__item mix wp boots">
+                        <a href="#" class="site-img">
+                            <img src="./img/portfolio/coffee-world.jpg" alt="cups">
+                            <button class="button-ref hover-btn">Смотреть проект</button>
+                        </a>
+                        <a href="#" class="site-name site-name_small">Верстка “Мир кофе”</a>
+                        <h5 class="site-type">Верстка многостраничного сайта.</h5>
+                    </div>
+                    <div class="portfolio-works__item mix wp">
+                        <a href="#" class="site-img">
+                            <img src="./img/portfolio/phone-world.jpg" alt="phone">
+                            <button class="button-ref hover-btn">Смотреть проект</button>
+                        </a>
+                        <a href="#" class="site-name site-name_small">Верстка “Мир телефонов”</a>
+                        <h5 class="site-type">Верстка многостраничного сайта.</h5>
+                    </div>
+                    <div class="portfolio-works__item mix nonvisible-block frontend">
+                        <a href="#" class="site-img">
+                            <img src="./img/portfolio/auto-world.jpg" alt="limon">
+                            <button class="button-ref hover-btn">Смотреть проект</button>
+                        </a>
+                        <a href="#" class="site-name site-name_small">Верстка “Мир Авто”</a>
+                        <h5 class="site-type">Верстка многостраничного сайта.</h5>
+                    </div>
                 </div>
-                <div class="site-card mix boots">
-                    <a href="#" class="site-img">
-                        <img src="./img/portfolio/iMac-Mockup.jpg" alt="bubbles">
-                        <button class="button-ref hover-btn">Смотреть проект</button>
-                    </a>
-                    <a href="#" class="site-name">Сайт для коворкинга</a>
-                    <h5 class="site-type">Верстка лендинга.
-                    </h5>
-                </div>
-                <div class="site-card mix wp boots">
-                    <a href="#" class="site-img">
-                        <img src="./img/portfolio/coffee-world.jpg" alt="cups">
-                        <button class="button-ref hover-btn">Смотреть проект</button>
-                    </a>
-                    <a href="#" class="site-name site-name_small">Верстка “Мир кофе”</a>
-                    <h5 class="site-type">Верстка многостраничного сайта.</h5>
-                </div>
-                <div class="site-card mix wp">
-                    <a href="#" class="site-img">
-                        <img src="./img/portfolio/phone-world.jpg" alt="phone">
-                        <button class="button-ref hover-btn">Смотреть проект</button>
-                    </a>
-                    <a href="#" class="site-name site-name_small">Верстка “Мир телефонов”</a>
-                    <h5 class="site-type">Верстка многостраничного сайта.</h5>
-                </div>
-                <div class="site-card mix nonvisible-block frontend">
-                    <a href="#" class="site-img">
-                        <img src="./img/portfolio/auto-world.jpg" alt="limon">
-                        <button class="button-ref hover-btn">Смотреть проект</button>
-                    </a>
-                    <a href="#" class="site-name site-name_small">Верстка “Мир Авто”</a>
-                    <h5 class="site-type">Верстка многостраничного сайта.</h5>
-                </div>
+
+                <a class="nonvisible-ref" href="#">Смотреть все работы</a>
+
             </div>
+        </section>
 
-            <a class="nonvisible-ref" href="#">Смотреть все работы</a>
-
-        </div>
-    </section>
+    <!-- </main> -->
 
     <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/jQuery/jquery-3.4.1.min.js"></script>
