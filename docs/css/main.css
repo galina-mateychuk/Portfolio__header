@@ -158,6 +158,7 @@ button {
 }
 .heading-section {
   position: relative;
+  z-index: 0;
   width: fit-content;
   font-size: 42px;
   font-weight: 800;
@@ -1071,6 +1072,7 @@ button {
 }
 .heading-section-timetable {
   position: relative;
+  z-index: 0;
   width: fit-content;
   font-size: 35px;
   font-weight: 800;
@@ -1254,6 +1256,7 @@ button {
 @media (min-width: 1200px) {
   .timetable-column__work-element {
     position: relative;
+    z-index: 0;
     font-size: 24px;
     margin-bottom: 8px;
     display: inline-block;
@@ -1300,12 +1303,18 @@ button {
 }
 .section-contacts {
   padding-top: 75px;
-  padding-bottom: 56px;
+  padding-bottom: 60px;
   background-color: #f4f8f9;
   color: #000000;
 }
+@media (min-width: 768px) {
+  .section-contacts {
+    padding-bottom: 91px;
+  }
+}
 @media (min-width: 1200px) {
   .section-contacts {
+    padding-bottom: 151px;
     background-image: url("../img/contacts/images/contacts-bg_02.jpg");
     background-repeat: repeat-y;
     background-position: center;
@@ -1387,7 +1396,7 @@ button {
 }
 @media (min-width: 768px) {
   .contacts-block__text {
-    max-width: 300px;
+    max-width: 290px;
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 1.56;
@@ -1468,7 +1477,7 @@ button {
 }
 .contacts-form__item {
   position: relative;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 .contacts-form__item textarea {
   height: 144px;
@@ -1528,7 +1537,7 @@ button {
   transition: 0.3s;
 }
 .btn-submit {
-  padding: 17px 41px;
+  padding: 14px 41px;
   border: none;
   border-radius: 30.5px;
   background-color: var(--yellow);
@@ -1551,5 +1560,42 @@ button {
     padding: 19px 41px;
     width: unset;
   }
+}
+.footer {
+  padding-top: 34px;
+  padding-bottom: 40px;
+  background-color: #333333;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 41px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 22px;
+    padding-bottom: 40px;
+  }
+}
+.footer-content {
+  color: #b0b0b0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+}
+.footer-content a {
+  display: inline;
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+.footer-content a:hover,
+.footer-content a:active {
+  color: #ffffff;
+}
+.footer-content__first-paragraph {
+  margin-bottom: 9px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */
