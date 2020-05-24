@@ -178,6 +178,7 @@ button {
   font-weight: 800;
   color: #000000;
   line-height: 1.2;
+  
 
   &::after {
     position: absolute;
@@ -189,8 +190,8 @@ button {
     bottom: -9px;
     left: 0;
     transform: translateY(-100%);
-
     z-index: -1;
+    transition: 0.5s;
 
     @media (min-width: 768px) {
       bottom: -6px;
@@ -199,6 +200,11 @@ button {
     @media (min-width: 1200px) {
       bottom: -4px;
     }
+  }
+
+  &:hover::after {
+    background-color: var(--hover-color);
+    transition: 0.3s;
   }
 
   @media (min-width: 768px) {
