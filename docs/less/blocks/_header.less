@@ -59,7 +59,6 @@
   text-align: center;
 
   position: relative;
-  padding: 0 8px;
   z-index: 1;
   transition: 0.3s;
 
@@ -72,11 +71,13 @@
     position: absolute;
     content: "";
     width: 100%;
-    height: 10px;
-    background-color: var(--yellow);
+    height: 0px;
+    border-bottom: 10px solid var(--yellow);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 
     bottom: -5px;
-    left: 0;
+    left: -4px;
     transform: translateY(-100%);
 
     z-index: -1;
@@ -369,18 +370,22 @@
     display: block;
     content: "";
     width: 100%;
-    height: 12px;
-    background-color: var(--yellow);
+    height: 0px;
+    border-bottom: 12px solid var(--yellow);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
 
     bottom: -5px;
-    left: 0;
+    left: -6px;
     transform: translateY(-100%);
     z-index: -1;
     transition: 0.3s;
   }
 
   &:hover::after {
-    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
     transition: 0.3s;
   }
 

@@ -169,10 +169,12 @@ button {
   position: absolute;
   content: "";
   width: 100%;
-  height: 12px;
-  background-color: #fbdc4d;
+  height: 0px;
+  border-bottom: 12px solid var(--yellow);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   bottom: -9px;
-  left: 0;
+  left: -6px;
   transform: translateY(-100%);
   z-index: -1;
   transition: 0.5s;
@@ -188,7 +190,9 @@ button {
   }
 }
 .heading-section:hover::after {
-  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   transition: 0.3s;
 }
 @media (min-width: 768px) {
@@ -280,7 +284,6 @@ button {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  padding: 0 8px;
   z-index: 1;
   transition: 0.3s;
 }
@@ -292,10 +295,12 @@ button {
   position: absolute;
   content: "";
   width: 100%;
-  height: 10px;
-  background-color: var(--yellow);
+  height: 0px;
+  border-bottom: 10px solid var(--yellow);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
   bottom: -5px;
-  left: 0;
+  left: -4px;
   transform: translateY(-100%);
   z-index: -1;
 }
@@ -551,16 +556,20 @@ button {
   display: block;
   content: "";
   width: 100%;
-  height: 12px;
-  background-color: var(--yellow);
+  height: 0px;
+  border-bottom: 12px solid var(--yellow);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   bottom: -5px;
-  left: 0;
+  left: -6px;
   transform: translateY(-100%);
   z-index: -1;
   transition: 0.3s;
 }
 .about-name_underline:hover::after {
-  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   transition: 0.3s;
 }
 @media (min-width: 768px) {
@@ -1100,27 +1109,33 @@ button {
   position: absolute;
   content: "";
   width: 100%;
-  height: 10px;
-  background-color: #fbdc4d;
-  bottom: -3px;
-  left: 0;
-  transform: translateY(-100%);
+  height: 0px;
+  border-bottom: 10px solid var(--yellow);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  bottom: 7px;
+  left: -5px;
   z-index: -1;
   transition: 0.3s;
 }
 @media (min-width: 768px) {
   .heading-section-timetable::after {
-    height: 12px;
-    bottom: 0px;
+    bottom: 12px;
+    left: -6px;
+    border-bottom: 12px solid var(--yellow);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
   }
 }
 @media (min-width: 1200px) {
   .heading-section-timetable::after {
-    bottom: 3px;
+    bottom: 17px;
   }
 }
 .heading-section-timetable:hover::after {
-  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
   transition: 0.3s;
 }
 @media (min-width: 768px) {

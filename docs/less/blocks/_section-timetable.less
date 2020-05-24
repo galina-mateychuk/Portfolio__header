@@ -28,27 +28,34 @@
     position: absolute;
     content: "";
     width: 100%;
-    height: 10px;
-    background-color: #fbdc4d;
+    height: 0px;
+    border-bottom: 10px solid var(--yellow);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
 
-    bottom: -3px;
-    left: 0;
-    transform: translateY(-100%);
+    bottom: 7px;
+    left: -5px;
     z-index: -1;
     transition: 0.3s;
 
     @media (min-width: 768px) {
-      height: 12px;
-      bottom: 0px;
+      bottom: 12px;
+      left: -6px;
+      border-bottom: 12px solid var(--yellow);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
     }
 
     @media (min-width: 1200px) {
-      bottom: 3px;
+      bottom: 17px;
     }
   }
 
   &:hover::after {
-    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
     transition: 0.3s;
   }
 
