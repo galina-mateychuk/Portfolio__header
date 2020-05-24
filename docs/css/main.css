@@ -13,7 +13,7 @@ body {
   position: relative;
   color: #393f47;
   font-family: "M PLUS 1p", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
 }
 html ::selection,
 body ::selection {
@@ -1300,9 +1300,17 @@ button {
 }
 .section-contacts {
   padding-top: 75px;
-  padding-bottom: 150px;
+  padding-bottom: 56px;
   background-color: #f4f8f9;
   color: #000000;
+}
+@media (min-width: 1200px) {
+  .section-contacts {
+    background-image: url("../img/contacts/images/contacts-bg_02.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: auto;
+  }
 }
 .heading-section-contacts {
   margin-left: auto;
@@ -1316,10 +1324,11 @@ button {
 }
 @media (min-width: 1200px) {
   .heading-section-contacts {
-    margin-bottom: 75px;
+    margin-bottom: 66px;
   }
 }
 .contacts-row {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -1329,14 +1338,46 @@ button {
     justify-content: space-between;
   }
 }
+@media (min-width: 1200px) {
+  .contacts-row {
+    align-items: center;
+  }
+  .contacts-row::before,
+  .contacts-row::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 140px;
+    height: 243px;
+    background-image: url("../img/contacts/cooks.svg");
+    background-repeat: no-repeat;
+    left: 0;
+  }
+  .contacts-row::before {
+    top: 13%;
+    transform: translateX(-122%);
+  }
+  .contacts-row::after {
+    top: 11%;
+    transform: translateX(calc(-122% - 140px));
+  }
+}
 .contacts-block {
-  margin-bottom: 20px;
+  margin-bottom: 51px;
+}
+.contacts-block .contacts-icons {
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .contacts-block {
     width: 50%;
     max-width: 340px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-block {
+    max-width: 570px;
   }
 }
 .contacts-block__text {
@@ -1354,6 +1395,7 @@ button {
 }
 @media (min-width: 1200px) {
   .contacts-block__text {
+    max-width: 450px;
     margin-bottom: 40px;
     font-size: 20px;
     line-height: 1.6;
@@ -1382,33 +1424,121 @@ button {
   font-size: 18px;
   font-weight: 700;
 }
-@media (min-width: 768px) {
-  .list-item-type {
-    width: 50%;
-  }
-}
 @media (min-width: 1200px) {
   .list-item-type {
     font-size: 20px;
+    width: 35%;
   }
 }
 .list-item-ref {
   font-size: 18px;
   color: #96969d;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .list-item-ref {
     width: 50%;
   }
 }
 .contacts-form {
-  padding: 35px 20px;
+  padding: 36px 12px 39px;
   background-color: #ffffff;
   box-shadow: 0px 28px 40px 0px rgba(194, 219, 235, 0.5);
 }
 @media (min-width: 768px) {
   .contacts-form {
+    padding: 43px 34px 14px;
     width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-form {
+    padding: 55px 57px 39px;
+    max-width: 530px;
+  }
+}
+.contacts-form__item {
+  position: relative;
+  margin-bottom: 17px;
+}
+.contacts-form__item textarea {
+  height: 144px;
+  padding-top: 30px;
+}
+.contacts-form__item textarea:active,
+.contacts-form__item textarea:focus {
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  .contacts-form__item {
+    margin-bottom: 17px;
+  }
+  .contacts-form__item textarea {
+    height: 145px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-form__item {
+    margin-bottom: 40px;
+  }
+  .contacts-form__item textarea {
+    height: 133px;
+    padding-top: 30px;
+  }
+}
+.form-field {
+  display: block;
+  height: 66px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+}
+.form-field:active,
+.form-field:focus {
+  border-bottom: 2px solid #ed9626;
+}
+.fake-placeholder {
+  position: absolute;
+  top: 26px;
+  left: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #bcbcbc;
+  pointer-events: none;
+  /* делает поле невидимым для "клика" */
+  transition: 0.3s;
+}
+.fake-placeholder.active {
+  font-size: 16px;
+  color: #ed9626;
+  top: 2px;
+  transition: 0.3s;
+}
+.btn-submit {
+  padding: 17px 41px;
+  border: none;
+  border-radius: 30.5px;
+  background-color: var(--yellow);
+  color: #000000;
+  width: 100%;
+}
+.btn-submit:hover {
+  background-color: #e6bf14;
+}
+.btn-submit:active {
+  background-color: #c2c520;
+}
+@media (min-width: 768px) {
+  .btn-submit {
+    padding: 16px 41px;
+  }
+}
+@media (min-width: 1200px) {
+  .btn-submit {
+    padding: 19px 41px;
+    width: unset;
   }
 }
 /*# sourceMappingURL=main.css.map */
