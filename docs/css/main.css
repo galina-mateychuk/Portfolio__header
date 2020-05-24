@@ -1146,6 +1146,16 @@ button {
   min-height: 170px;
   padding-bottom: 45px;
   margin-bottom: 12px;
+  cursor: pointer;
+}
+.timetable-column__block:hover .timetable-column__work-element::after {
+  background-color: var(--hover-color);
+  bottom: -4px;
+  transition: 0.3s;
+}
+.timetable-column__block:hover .timetable-column__block-icon {
+  box-shadow: 0px 3px 55px 10px rgba(0, 112, 187, 0.35);
+  transition: 0.3s;
 }
 .timetable-column__block:last-child {
   margin-bottom: 0;
@@ -1229,6 +1239,7 @@ button {
   background-color: #ffffff;
   box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
   flex-shrink: 0;
+  transition: 0.3s;
 }
 .timetable-column__block-icon svg {
   width: 40px;
@@ -1292,10 +1303,6 @@ button {
     left: 0;
     transform: translateY(-100%);
     z-index: -1;
-    transition: 0.3s;
-  }
-  .timetable-column__work-element:hover::after {
-    background-color: var(--hover-color);
     transition: 0.3s;
   }
 }
