@@ -1409,6 +1409,9 @@ button {
   flex-direction: column;
   margin-bottom: 12px;
 }
+.contacts-block__list-item:last-child .list-item-ref {
+  color: #96969d;
+}
 @media (min-width: 768px) {
   .contacts-block__list-item {
     justify-content: flex-start;
@@ -1432,7 +1435,14 @@ button {
 }
 .list-item-ref {
   font-size: 18px;
-  color: #96969d;
+  color: #039be5;
+}
+.list-item-ref:hover {
+  color: var(--yellow);
+  border: none;
+}
+.list-item-ref:active {
+  color: var(--red);
 }
 @media (min-width: 1200px) {
   .list-item-ref {
@@ -1466,7 +1476,8 @@ button {
 }
 .contacts-form__item textarea:active,
 .contacts-form__item textarea:focus {
-  border-bottom: none;
+  outline: none;
+  border: 2px solid #ed9626;
 }
 @media (min-width: 768px) {
   .contacts-form__item {
