@@ -68,6 +68,7 @@
 }
 
 .contacts-block {
+  position: relative;
   margin-bottom: 51px;
 
   .contacts-icons {
@@ -82,6 +83,19 @@
 
   @media (min-width: 1200px) {
     max-width: 570px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 310px;
+      height: 275px;
+      top: 0;
+      left: -60%;
+      background-image: url('.././img/icons/oval-group.svg');
+      background-repeat: repeat;
+      z-index: 2;
+    }
   }
 }
 
