@@ -222,6 +222,18 @@ button {
     margin-bottom: 0;
   }
 }
+#back-top a {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: var(--orange);
+  opacity: 0.4;
+  transition: 0.3s;
+}
+#back-top a:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
 .header {
   margin: 0 auto;
   padding: 30px 0 95px;
@@ -1627,6 +1639,9 @@ button {
 }
 .contact-form__success {
   color: var(--orange);
+}
+.valid {
+  background-color: rgba(230, 192, 20, 0.25);
 }
 .footer {
   padding-top: 34px;

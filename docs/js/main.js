@@ -57,40 +57,23 @@ $(document).
                         inputPlaceholder.classList.remove('active');
                     }
                 })
-            }
+            };
 
-            // валидация полей формы
-            $('#request-form').validate({
-                rules: {
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    tmeme: {
-                        required: true
-                    },
-                    message: {
-                        required: true
-                    }
-                },
-                messages: {
-                    email: {
-                        required: 'Введите адрес электронной почты',
-                        email: 'Адрес электронной почты некорректен'
-                    },
-                    tmeme: {
-                        required: 'Введите тему сообщения'
-                    },
-                    message: {
-                        required: 'Введите Ваше сообщение'
-                    }
-                },
-                submitHandler: function (form) {
-                    ajaxFormSubmit();
+            // icon Back To Top
+
+            $('#back-top').hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200){
+                    $('#back-top').fadeIn();
                 }
-            });
+                else {
+                    $('#back-top').fadeOut();
+                }
+            })
 
-            
+
+
+
 
         }
     );
