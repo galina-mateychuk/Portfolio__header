@@ -63,7 +63,7 @@ $(document).
 
             $('#back-top').hide();
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 200){
+                if ($(this).scrollTop() > 200) {
                     $('#back-top').fadeIn();
                 }
                 else {
@@ -71,6 +71,19 @@ $(document).
                 }
             })
 
+            // nav dots
+
+            $('nav-dots').onePageNav({
+                currentClass: 'active',
+                changeHash: false,
+                scrollSpeed: 750,
+                scrollThreshold: 0.5,
+                filter: '',
+                easing: 'swing',
+                begin: function () { },
+                end: function () { },
+                scrollChange: function ($currentListItem) { }
+            })
 
 
 

@@ -17,8 +17,14 @@
 <body>
 
     <div id="overlay"></div>
+    <ul id="nav-dots">
+        <li class="active"><a href="#header" title="Главная"></a></li>
+        <li><a href="#portfolio" title="Мои работы"></a></li>
+        <li><a href="#timetable" title="Как я работаю"></a></li>
+        <li><a href="#contacts" title="Свяжитесь со мной"></a></li>
+    </ul>
 
-    <header class="header none">
+    <header id="header" class="header none">
 
         <div class="header-top">
             <a class="logo" href="#">gм</a>
@@ -135,7 +141,7 @@
 
     <!-- <main> -->
 
-    <section class="section-portfolio none">
+    <section id="portfolio" class="section-portfolio none">
         <div class="container">
 
             <h2 id="all-works" class="heading-section heading-section-portfolio">Портфолио</h2>
@@ -195,7 +201,7 @@
         </div>
     </section>
 
-    <section class="section-timetable">
+    <section id="timetable" class="section-timetable">
         <div class="container">
             <h3 class="heading-section-timetable">Как я работаю</h3>
             <div class="timetable-column">
@@ -385,6 +391,7 @@
     <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/jQuery/jquery-3.4.1.min.js"></script>
     <script src="./libs/jquery.validate/jquery.validate.js"></script>
+    <script src="./libs/nav.js/nav.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/main.js"></script>
 </body>
