@@ -73,7 +73,7 @@ $(document).
 
             // nav dots
 
-            $('nav-dots').onePageNav({
+            $('#nav-dots').onePageNav({
                 currentClass: 'active',
                 changeHash: false,
                 scrollSpeed: 750,

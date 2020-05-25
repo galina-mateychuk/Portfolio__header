@@ -1060,6 +1060,7 @@ button {
 @media (min-width: 1200px) {
   .site-img {
     margin-bottom: 25px;
+    max-height: 365px;
   }
 }
 .hover-btn {
