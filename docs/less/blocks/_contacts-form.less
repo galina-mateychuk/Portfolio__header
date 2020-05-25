@@ -25,7 +25,7 @@
     &:active,
     &:focus {
       outline: none;
-      border: 2px solid #ed9626;
+      border: 2px solid var(--orange);
     }
   }
 
@@ -54,10 +54,12 @@
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
 
   &:active,
   &:focus {
-    border-bottom: 2px solid #ed9626;
+    border-bottom: 2px solid var(--orange);
   }
 }
 
@@ -76,7 +78,7 @@
 
 .fake-placeholder.active {
   font-size: 16px;
-  color: #ed9626;
+  color: var(--orange);
   top: 2px;
   transition: 0.3s;
 }
@@ -104,4 +106,23 @@
     padding: 19px 41px;
     width: unset;
   }
+}
+
+.error {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--red);
+
+  &::before {
+    position: absolute;
+    content: '\f124';
+    font-family: 'FontAwesome';
+    top: -10px;
+    left: -20px;
+  }
+}
+
+.contact-form__success {
+  color: var(--orange);
 }

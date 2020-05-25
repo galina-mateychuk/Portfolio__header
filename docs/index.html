@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
     <link rel="stylesheet" href="./css/main.css">
-    <title>Портфолио - МГ</title>
+    <title>Портфолио - GM</title>
 </head>
 
 <body>
@@ -332,7 +332,11 @@
                     </div>
                 </div>
 
-                <form class="contacts-form">
+                <form id="request-form" class="contacts-form">
+                    <input type="hidden" name="project_name" value="portfolio-GM.ru">
+                    <input type="hidden" name="admin_email" value="halyna.mateychuk@gmail.com">
+                    <input type="hidden" name="email_from" value="info@portfolio-GM.ru">
+
                     <div class="contacts-form__item">
                         <input class="form-field" type="text" name="email">
                         <span class="fake-placeholder">Ваш Email</span>
@@ -352,6 +356,7 @@
                         <input class="button-ref btn-submit" type="submit" value="Отправить">
                     </div>
                 </form>
+                <div id="answer"></div>
 
             </div>
 
@@ -373,6 +378,8 @@
 
     <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./libs/jquery.validate/jquery.validate.js"></script>
+    <script src="./js/form.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

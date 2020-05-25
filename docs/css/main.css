@@ -59,6 +59,7 @@ button {
   --hover-color: #0077b5;
   --yellow: #fbdc4d;
   --red: #d63434;
+  --orange: #ed9626;
 }
 .none {
   display: none;
@@ -1534,7 +1535,7 @@ button {
 .contacts-form__item textarea:active,
 .contacts-form__item textarea:focus {
   outline: none;
-  border: 2px solid #ed9626;
+  border: 2px solid var(--orange);
 }
 @media (min-width: 768px) {
   .contacts-form__item {
@@ -1562,10 +1563,12 @@ button {
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .form-field:active,
 .form-field:focus {
-  border-bottom: 2px solid #ed9626;
+  border-bottom: 2px solid var(--orange);
 }
 .fake-placeholder {
   position: absolute;
@@ -1580,7 +1583,7 @@ button {
 }
 .fake-placeholder.active {
   font-size: 16px;
-  color: #ed9626;
+  color: var(--orange);
   top: 2px;
   transition: 0.3s;
 }
@@ -1608,6 +1611,22 @@ button {
     padding: 19px 41px;
     width: unset;
   }
+}
+.error {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--red);
+}
+.error::before {
+  position: absolute;
+  content: '\f124';
+  font-family: 'FontAwesome';
+  top: -10px;
+  left: -20px;
+}
+.contact-form__success {
+  color: var(--orange);
 }
 .footer {
   padding-top: 34px;
