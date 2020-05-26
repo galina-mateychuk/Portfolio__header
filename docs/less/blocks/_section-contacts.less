@@ -86,13 +86,13 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       display: block;
       width: 310px;
       height: 275px;
       top: 0;
       left: -60%;
-      background-image: url('.././img/icons/oval-group.svg');
+      background-image: url(".././img/icons/oval-group.svg");
       background-repeat: repeat;
       z-index: 2;
     }
@@ -136,6 +136,11 @@
 
   &:last-child .list-item-ref {
     color: #96969d;
+    transition: 0.5s;
+    &:hover {
+      color: #05a505;
+      transition: 0.5s;
+    }
   }
 
   @media (min-width: 768px) {
@@ -163,9 +168,11 @@
 .list-item-ref {
   font-size: 18px;
   color: #039be5;
+  transition: 0.5s;
   &:hover {
     color: var(--yellow);
     border: none;
+    transition: 0.5s;
   }
   &:active {
     color: var(--red);

@@ -134,26 +134,64 @@ button {
   line-height: 1.2;
   text-align: center;
 }
-
+.fa-linkedin-in {
+  transition: 0.3s;
+}
 .fa-linkedin-in:hover,
 .fa-linkedin-in:active {
   color: #0077b5;
+}
+.fa-linkedin-in:hover.fa-2x {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.fa-github {
+  transition: 0.3s;
 }
 .fa-github:hover,
 .fa-github:active {
   color: #6cc644;
 }
+.fa-github:hover.fa-2x {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.fa-vk {
+  transition: 0.3s;
+}
 .fa-vk:hover,
 .fa-vk:active {
   color: #45668e;
+}
+.fa-vk:hover.fa-2x {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.fa-telegram {
+  transition: 0.3s;
 }
 .fa-telegram:hover,
 .fa-telegram:active {
   color: #0088cc;
 }
+.fa-telegram:hover.fa-2x {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.fa-facebook {
+  transition: 0.3s;
+}
 .fa-facebook:hover,
 .fa-facebook:active {
   color: #3b5998;
+}
+.fa-facebook:hover.fa-2x {
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 .heading-article {
@@ -279,12 +317,16 @@ button {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    background-color: var(--yellow);
+    transition: 0.3s;
     &:last-child {
       margin-bottom: 0;
     }
-
-    background-color: var(--yellow);
+    &:hover {
+      transform: scale(1.3);
+      transition: 0.3s;
+    }
 
     a {
       display: block;
