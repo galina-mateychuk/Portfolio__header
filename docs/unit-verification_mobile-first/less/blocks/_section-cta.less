@@ -1,0 +1,103 @@
+.section-cta {
+  padding: 69px 0 75px;
+  position: relative;
+  background-color: #0a824e;
+  background-image: url("./../img/cta/bg-cta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 130, 78, 0.7);
+  }
+
+  @media (min-width: 768px) {
+    padding: 70px 0 80px;
+    background-position: center;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background-position: top;
+  }
+}
+
+.center-cta {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.cta-title {
+  margin-bottom: 37px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+
+  @media (min-width: 538px) {
+    padding: 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 51px;
+    padding: 0;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-bottom: 46px; 
+  }
+}
+.cta-unit-style {
+  font-weight: 700;
+  letter-spacing: 2.2px;
+}
+
+.cta-button {
+  padding: 0 43px;
+  
+  height: 60px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2.143;
+  letter-spacing: 2.8px;
+  color: #2bb279;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    outline: none;
+    background: linear-gradient(
+      to bottom,
+      rgb(82, 231, 167) 0%,
+      rgb(34, 141, 95) 100%,
+      rgb(80, 227, 164) 50%
+    );
+  }
+
+  @media (min-width: 768px) {
+    height: 60px;
+    padding: 0px 45px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 60px;
+  }
+}

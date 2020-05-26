@@ -852,6 +852,8 @@ button {
 @media (min-width: 1200px) {
   .section-timetable {
     max-width: 1600px;
+    padding-top: 127px;
+    padding-bottom: 118px;
     background-image: url("../img/header/lines.jpg");
     background-repeat: repeat-y;
     background-position: center;
@@ -990,7 +992,8 @@ button {
 }
 @media (min-width: 1200px) {
   .timetable-column__block {
-    margin-bottom: 25px;
+    margin-bottom: 39px;
+    padding-bottom: 25px;
   }
   .timetable-column__block:nth-of-type(odd) {
     justify-content: flex-start;
@@ -1125,6 +1128,7 @@ button {
 }
 @media (min-width: 1200px) {
   .section-contacts {
+    padding-top: 136px;
     padding-bottom: 151px;
     background-image: url("../img/contacts/images/contacts-bg_02.jpg");
     background-repeat: repeat-y;
@@ -1144,7 +1148,7 @@ button {
 }
 @media (min-width: 1200px) {
   .heading-section-contacts {
-    margin-bottom: 66px;
+    margin-bottom: 67px;
   }
 }
 .contacts-row {
@@ -1237,6 +1241,11 @@ button {
 .contacts-block__list {
   margin-bottom: 33px;
 }
+@media (min-width: 1200px) {
+  .contacts-block__list {
+    margin-bottom: 40px;
+  }
+}
 .contacts-block__list-item {
   display: flex;
   flex-direction: column;
@@ -1303,7 +1312,7 @@ button {
 @media (min-width: 1200px) {
   .contacts-form {
     padding: 55px 57px 39px;
-    max-width: 530px;
+    max-width: 495px;
   }
 }
 .contacts-form__item {

@@ -1,0 +1,127 @@
+.section-tasks {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 41px;
+  border-bottom: 1px solid rgba(203, 203, 203, 0.5);
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 68.5px;
+    height: 68.5px;
+    background-color: #a4eecb;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 65px;
+    padding-bottom: 39px;
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 91px;
+    padding-bottom: 16px;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: ~"calc(50% - 75px)";
+      left: -93.5px;
+      width: 148.5px;
+      height: 148.5px;
+      background-color: #a4eecb;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.tasks-row {
+  padding-left: 100px;
+  padding-right: 150px;
+}
+.tasks-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tasks-content {
+  float: left;
+  width: 440px;
+}
+
+.section-tasks__title {
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 37px;
+  }
+}
+
+.section-tasks__header {
+  margin-bottom: 41px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 42px;
+  }
+}
+
+.section-tasks__desc {
+  margin-bottom: 50px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 5px;
+  }
+}
+
+.section-cell-phone {
+  @media (min-width: 768px) {
+    width: 44%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 50%;
+    padding-left: 54px;
+  }
+}
+
+.phone-indent {
+  max-width: 202px;
+
+  @media (min-width: 460px) {
+    max-width: 240px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 270px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.phone-indent img {
+  max-width: 100%;
+}

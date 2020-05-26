@@ -1,0 +1,136 @@
+.section-focus {
+  position: relative;
+  padding-top: 73px;
+  padding-bottom: 30px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 68.5px;
+    height: 68.5px;
+    background-color: #a4eecb;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 53px;
+    padding-bottom: 0px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 80px;
+
+    &::before {
+      display: block;
+      top: 50%;
+      left: unset;
+      right: 0;
+      width: 131.5px;
+      height: 131.5px;
+      transform: translate(50%, -69%) rotate(45deg);
+    }
+  }
+}
+
+.focus-section_row {
+  flex-direction: column-reverse;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.focus-img-wrapper {
+  position: relative;
+  max-width: 470px;
+
+  @media (min-width: 768px) {
+    max-width: unset;
+    width: 287px;
+    height: 511px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 470px;
+    height: 731px;
+  }
+}
+
+.focus-img {
+  position: static;
+  max-width: 100%;
+  transform: translateX(-4%);
+
+  @media (min-width: 768px) {
+    transform: translateX(0%);
+    position: absolute;
+    top: 6px;
+    right: 0;
+    max-width: 648px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: unset;
+    position: absolute;
+    top: 1px;
+    right: -3px;
+  }
+}
+
+.focus-content {
+  max-width: 470px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-top: 32px;
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 470px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 130px;
+  }
+}
+
+.focus-content_title {
+  margin-bottom: 34px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 42px;
+  }
+}
+
+.focus-content_header {
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 38px;
+  }
+}
+
+.focus-content_desc {
+  margin-bottom: 50px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
