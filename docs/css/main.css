@@ -397,6 +397,7 @@ button {
 .logo:hover {
   color: var(--hover-color);
   transition: 0.3s;
+  animation: scale 3s linear 0s infinite;
 }
 .logo::after {
   position: absolute;
@@ -410,6 +411,23 @@ button {
   left: -4px;
   transform: translateY(-100%);
   z-index: -1;
+}
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .header-top_nav {
   position: fixed;
