@@ -392,11 +392,11 @@ button {
   text-align: center;
   position: relative;
   z-index: 1;
-  transition: 0.3s;
+  transition: 2s;
 }
 .logo:hover {
   color: var(--hover-color);
-  transition: 0.3s;
+  transition: 2s;
   animation: scale 3s linear 0s infinite;
 }
 .logo::after {
@@ -448,7 +448,6 @@ button {
 .header-top_nav a {
   width: fit-content;
   position: relative;
-  padding: 0 2px;
   z-index: 1;
   margin-bottom: 20px;
 }
@@ -483,11 +482,10 @@ button {
     transform: translateX(0);
   }
   .header-top_nav a {
-    padding: 0 5px;
     margin-bottom: 0;
     margin-right: 80px;
   }
-  .header-top_nav a:last-child {
+  .header-top_nav a:last-of-type {
     margin-right: 0;
   }
   .header-top_nav::after {
@@ -872,7 +870,7 @@ button {
     max-width: 1600px;
     padding-top: 127px;
     padding-bottom: 118px;
-    background-image: url("../img/header/lines.jpg");
+    background-image: url("../img/timetable/timetable-bg.jpg");
     background-repeat: repeat-y;
     background-position: center;
     background-size: auto;
@@ -1226,9 +1224,9 @@ button {
     position: absolute;
     content: "";
     display: block;
-    width: 310px;
-    height: 275px;
-    top: 0;
+    width: 450px;
+    height: 280px;
+    top: -17px;
     left: -60%;
     background-image: url("../img/icons/oval-group.svg");
     background-repeat: repeat;
@@ -1375,6 +1373,11 @@ button {
   padding-top: 20px;
   font-size: 20px;
   font-weight: 500;
+  transition: 0.3s;
+}
+.form-field:hover {
+  border-bottom: 1px solid #aa1313;
+  transition: 0.3s;
 }
 .form-field:active,
 .form-field:focus {
@@ -1435,8 +1438,9 @@ button {
   position: absolute;
   content: '\f124';
   font-family: 'FontAwesome';
+  font-size: 15px;
   top: -10px;
-  left: -20px;
+  left: -25px;
 }
 .contact-form__success {
   color: var(--orange);
@@ -1506,6 +1510,7 @@ button {
 @media (min-width: 1200px) {
   .header-content {
     flex-direction: row-reverse;
+    margin-bottom: 69px;
   }
 }
 .header-content_img {
@@ -1591,7 +1596,6 @@ button {
   .about-name {
     margin-bottom: 16px;
     display: inline-block;
-    padding-right: 4px;
     font-size: 90px;
   }
 }
@@ -1626,11 +1630,9 @@ button {
   }
 }
 @media (min-width: 1200px) {
-  .about-name_underline {
-    padding-right: 4px;
-  }
   .about-name_underline::after {
     bottom: 10px;
+    left: -4px;
   }
 }
 .about-desc {
@@ -1700,7 +1702,8 @@ button {
 @media (min-width: 1200px) {
   .header-image {
     transform: unset;
-    margin-top: -30px;
+    margin-top: 0;
+    margin-bottom: 0;
     max-width: 1600px;
   }
 }
