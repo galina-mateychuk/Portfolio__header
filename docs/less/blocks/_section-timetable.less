@@ -4,12 +4,13 @@
   margin: 0 auto;
   @media (min-width: 768px) {
     padding-top: 74px;
+    padding-bottom: 85px;
   }
 
   @media (min-width: 1200px) {
     max-width: 1600px;
     padding-top: 127px;
-    padding-bottom: 118px;
+    padding-bottom: 140px;
     background-image: url("../img/timetable/timetable-bg.jpg");
     background-repeat: repeat-y;
     background-position: center;
@@ -121,11 +122,11 @@
   @media (min-width: 768px) {
     width: 50%;
     padding-bottom: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     &:nth-of-type(odd) {
       flex-direction: row-reverse;
-      margin-left: 37px;
+      margin-left: 32px;
       margin-right: auto;
       text-align: right;
 
@@ -143,7 +144,7 @@
 
     &:nth-of-type(even) {
       margin-left: auto;
-      margin-right: 37px;
+      margin-right: 44px;
     }
 
     &:first-child::before {
@@ -160,11 +161,13 @@
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 39px;
-    padding-bottom: 25px;
+    margin-bottom: 29px;
+    padding-bottom: 35px;
 
     &:nth-of-type(odd) {
       justify-content: flex-start;
+      margin-left: 40px;
+      margin-right: auto;
       .timetable-column__description {
         margin-left: 0;
         margin-right: 41px;
@@ -172,8 +175,11 @@
     }
     &:nth-of-type(even) {
       justify-content: flex-start;
+      margin-left: auto;
+      margin-right: 33px;
+
       .timetable-column__description {
-        margin-left: 46px;
+        margin-left: 45px;
         margin-right: 0;
       }
     }
