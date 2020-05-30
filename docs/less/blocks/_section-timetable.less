@@ -90,8 +90,8 @@
 
   &:hover .timetable-column__work-element::after {
     background-color: var(--hover-color);
-    bottom: -4px;
-    transition: 0.3s;
+    bottom: -3px;
+    transition: background-color 0.3s ease-in-out;
   }
 
   &:hover .timetable-column__block-icon {
@@ -255,11 +255,11 @@
     &::after {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 101%;
       height: 7px;
       background-color: #fbdc4d;
       bottom: -2px;
-      left: 0;
+      left: -1px;
       transform: translateY(-100%);
       z-index: -1;
       transition: 0.3s;
