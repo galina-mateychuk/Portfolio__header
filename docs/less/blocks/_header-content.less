@@ -43,11 +43,7 @@
 
   &:hover {
     box-shadow: 0 0 35px 5px #a3cff3;
-    overflow: hidden;
     transition: 1s;
-  }
-  &:hover::after {
-    display: none;
   }
 
   @media (min-width: 768px) {
@@ -64,10 +60,9 @@
       position: absolute;
       content: "";
       display: block;
-      // border-radius: 12%;
       top: 25%;
       left: 30%;
-      background: -webkit-linear-gradient(
+      background: linear-gradient(
         90deg,
         rgb(244, 248, 249) 0%,
         rgba(244, 248, 249, 0) 100%
