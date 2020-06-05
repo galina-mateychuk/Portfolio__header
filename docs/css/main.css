@@ -106,7 +106,7 @@ button {
 }
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 900px;
   }
 }
 @media (min-width: 1200px) {
@@ -308,7 +308,7 @@ button {
   position: fixed;
   top: 45%;
   right: 10px;
-  z-index: 100;
+  z-index: 9;
 }
 #nav-dots li {
   width: 12px;
@@ -1031,7 +1031,7 @@ button {
     display: block;
     width: 4px;
     height: calc(100% - 93px);
-    top: -136px;
+    top: -100px;
     left: auto;
     right: 35px;
     background-color: #e1eef4;
@@ -1318,9 +1318,14 @@ button {
     justify-content: flex-start;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .contacts-block__list-item {
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-block__list-item {
     margin-bottom: 25px;
   }
 }
@@ -1377,6 +1382,7 @@ button {
 .contacts-form__item textarea {
   height: 144px;
   padding-top: 30px;
+  resize: none;
 }
 .contacts-form__item textarea:active,
 .contacts-form__item textarea:focus {
@@ -1398,7 +1404,6 @@ button {
   .contacts-form__item textarea {
     height: 133px;
     padding-top: 30px;
-    resize: none;
   }
 }
 .form-field {
