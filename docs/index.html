@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
         integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     <title>Портфолио - GM</title>
 </head>
@@ -163,7 +164,7 @@
             </nav> -->
 
                 <div id="portfolio-works" class="row">
-                    <div class="portfolio-works__item portfolio-works__item-big mix wp">
+                    <div class="portfolio-works__item portfolio-works__item-big mix wp wow animate__animated animate__fadeInLeft" data-wow-duration="3s" data-wow-delay="1s">
                         <a href="./project_FOREST-Travel/index.html" class="site-img" target="_blank">
                             <img src="./img/portfolio/card_forest_travel.jpg" alt="Piece of site">
                             <button class="button-ref hover-btn">Смотреть проект</button>
@@ -172,7 +173,7 @@
                             тревел”</a>
                         <p class="site-type">Верстка многостраничного сайта. </p>
                     </div>
-                    <div class="portfolio-works__item portfolio-works__item-big mix wp">
+                    <div class="portfolio-works__item portfolio-works__item-big mix wp wow animate__animated animate__fadeInRight" data-wow-duration="3s" data-wow-delay="2s">
                         <a href="./unit-verification_mobile-first/index.html" class="site-img" target="_blank">
                             <img src="./img/portfolio/card_unit.jpg" alt="Piece of site">
                             <button class="button-ref hover-btn">Смотреть проект</button>
@@ -181,7 +182,7 @@
                             “Юнит”</a>
                         <p class="site-type">Верстка лендинга. </p>
                     </div>
-                    <div class="portfolio-works__item portfolio-works__item-big mix wp">
+                    <div class="portfolio-works__item portfolio-works__item-big mix wp wow animate__animated animate__fadeInUp" data-wow-duration="3s" data-wow-delay="3s">
                         <a href="#" class="site-img" target="_blank">
                             <img src="./img/portfolio/card_portfolio.jpg" alt="Piece of site">
                             <button class="button-ref hover-btn">Смотреть проект</button>
@@ -408,6 +409,10 @@
             </div>
         </section>
 
+        <section class="wow animate__animated animate__fadeInLeft" data-wow-duration="10s" data-wow-delay="10s" data-wow-offset="10"
+            data-wow-iteration="10">
+            Hello
+        </section>
     </main>
 
     <footer class="footer">
@@ -431,6 +436,10 @@
     <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/jQuery/jquery-3.4.1.min.js"></script>
     <script src="./libs/jquery.validate/jquery.validate.js"></script>
+    <script src="./libs/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="./libs/nav.js/nav.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/main.js"></script>
