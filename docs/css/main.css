@@ -1257,6 +1257,7 @@ button {
 @media (min-width: 1200px) {
   .contacts-block {
     max-width: 570px;
+    z-index: 0;
   }
   .contacts-block::before {
     position: absolute;
@@ -1268,7 +1269,7 @@ button {
     left: -60%;
     background-image: url("../img/icons/oval-group.svg");
     background-repeat: repeat;
-    z-index: 2;
+    z-index: -1;
   }
 }
 .contacts-block__text {
