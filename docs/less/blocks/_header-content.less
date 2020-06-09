@@ -37,13 +37,19 @@
     height: 100%;
     z-index: 2;
     background-color: var(--hover-color);
-    opacity: 0.3;
+    opacity: 0.2;
     transition: 0.5s;
   }
 
   &:hover {
     box-shadow: 0 0 35px 5px #a3cff3;
     transition: 1s;
+  }
+
+  @media (min-width: 576px) {
+   img {
+     width: 100%;
+   }
   }
 
   @media (min-width: 768px) {

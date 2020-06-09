@@ -2129,7 +2129,7 @@ button {
   height: 100%;
   z-index: 2;
   background-color: var(--hover-color);
-  opacity: 0.3;
+  opacity: 0.2;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -2143,6 +2143,11 @@ button {
   -o-transition: 1s;
   -moz-transition: 1s;
   transition: 1s;
+}
+@media (min-width: 576px) {
+  .header-content_img img {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .header-content_img {
