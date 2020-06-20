@@ -54,6 +54,10 @@ img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 button,
 input {
@@ -2143,6 +2147,15 @@ button {
   -o-transition: 1s;
   -moz-transition: 1s;
   transition: 1s;
+}
+.header-content_img:hover img {
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  -moz-transition: 0.7s;
+  transition: 0.7s;
 }
 @media (min-width: 576px) {
   .header-content_img img {
